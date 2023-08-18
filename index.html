@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="heading">Science Quiz</h1>
+    <div class="container" id="container" >
+        
+        <div class="content" >
+            <h2 id="question">Question</h2>
+            <ul>
+               <li>
+                <input type="radio" id="a" name="answer" value="a">
+                <label id="option_a" for="a">Option_A</label>
+               </li>
+
+               <li>
+                <input type="radio" id="b" name="answer" value="b">
+                <label id="option_b" for="b">Option_B</label>
+               </li>
+
+               <li>
+                <input type="radio" id="c" name="answer" value="c">
+                <label id="option_c" for="c">Option_C</label>
+               </li>
+
+               <li>
+                <input type="radio" id="d" name="answer" value="d">
+                <label id="option_d" for="d">Option_D</label>
+               </li>
+            </ul>
+        </div>
+        <button id="submit_btn">Submit</button>
+    </div>
+
+    <div class="score" id="score">
+        <h2>You have completed the Quiz !!</h2>
+        <h1>🥳</h1>
+        <h2>Your Score is :</h2>
+        <p id="total_score">0</p>
+    </div>
+
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>

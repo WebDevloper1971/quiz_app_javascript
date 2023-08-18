@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    margin: 0;
+    padding:0;
+    background: linear-gradient(orange,white,green);
+    min-height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.heading{
+    
+    margin: 2rem 0;
+
+}
+
+.container{
+    background-color: #fff;
+    width: 500px;
+    
+   
+}
+.container ul{
+    margin: 4rem 0;
+}
+
+.container ul li{
+    list-style-type: none;
+    margin: 3rem 0;
+
+    display: flex;
+}
+
+label{
+    cursor: pointer;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+
+.content{
+    padding: 2rem;
+}
+
+.content h2{
+    margin: rem 0;
+    
+}
+#submit_btn{
+    height: 6rem;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1.5rem;
+    width:100%;
+    
+}
+
+.score{
+    
+    background-color: #fff;
+    
+    width: 500px;
+    padding: 3rem 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score h2{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.score h1{
+    margin: 1.5rem 0;
+    font-size: 5rem;
+}
+
+.score p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+@media (300px <= width <= 600px) {
+    .container{
+        width: 300px;
+        height: fit-content;
+    }
+    .container h2{
+        font-size: 1.2rem;
+    }
+    .container ul{
+        margin: 2rem 0;
+    }
+    .container ul li{
+        margin: 2rem 0;
+    }
+    label{
+        font-size: 1rem;
+    }
+    #submit_btn{
+        height: 4rem;
+    }
+
+
+
+    .score{
+        width: 300px;
+    }
+    .score h2, .score p{
+        font-size: 1.2rem;
+    }
+    .score h1{
+        font-size: 4.5rem ;
+    }
+}
